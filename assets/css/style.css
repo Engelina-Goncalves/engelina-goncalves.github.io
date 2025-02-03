@@ -9,6 +9,14 @@ body {
     line-height: 1.6;
     background-color: #cec2eb;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
 }
 
 header {
@@ -37,4 +45,5 @@ footer {
     padding: 20px;
     background: #333;
     color: white;
+    margin-top: auto;
 }
