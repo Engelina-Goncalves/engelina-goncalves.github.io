@@ -29,6 +29,7 @@ function cycleSkills() {
         currentIndex[currentCategory]++;
 
         if (currentIndex[currentCategory] >= categorySkills.length) {
+            displayAllSkillsInCategory(currentCategory);
             currentIndex[currentCategory] = 0
             moveToNextCategory();
         } else {
@@ -37,6 +38,11 @@ function cycleSkills() {
 
     }, 1000);
 
+}
+
+function displayAllSkillsInCategory(category) {
+    const skillElement = document.getElementById(`${category}-skill`);
+    skillElement.innerHTML = skills[category].join('<br>');
 }
 
 function moveToNextCategory(){
