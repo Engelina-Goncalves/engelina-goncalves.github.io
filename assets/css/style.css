@@ -23,6 +23,7 @@ body {
 
 main {
     flex-grow: 1;
+    padding: 20px;
 }
 
 header {
@@ -88,19 +89,25 @@ footer {
     padding: 50px 20px;
 }
 
-.contact-form {
+.contact-container {
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form label {
-    display: block;
     margin-top: 10px;
     font-weight: bold;
+    text-align: left;
 }
 
 .contact-form input,
@@ -110,24 +117,19 @@ footer {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
 }
 
 .contact-form textarea {
-    height: 150px;
-    resize: vertical;
+    height: 120px;
 }
 
 .contact-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
     margin-top: 15px;
+    padding: 10px;
     background: #495efc;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
 }
