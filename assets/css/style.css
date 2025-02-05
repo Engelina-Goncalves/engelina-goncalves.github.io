@@ -206,3 +206,28 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+
+.cv-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cv-buttons {
+    margin-top: 30px;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0073ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 10px;
+    transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #005ccc;
+}
