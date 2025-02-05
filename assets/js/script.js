@@ -31,6 +31,8 @@ function cycleSkills() {
         if (currentIndex[currentCategory] >= categorySkills.length) {
             currentIndex[currentCategory] = 0
             moveToNextCategory();
+        } else {
+            setTimeout(cycleSkills, 2000)
         }
 
     }, 1000);
