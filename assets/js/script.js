@@ -17,16 +17,24 @@ let currentCategory = 'programming';
 function cycleSkills() {
     const categorySkills = skills[currentCategory];
     const skillElement = document.getElementById(`${currentCategory}-skill`);
+
+    skillElement.style.transition = "opacity 1s ease-in-out";
     skillElement.style.opacity = 0;
+
     setTimeout(() => {
         skillElement.innerText =categorySkills[currentIndex[currentCategory]];
+
         skillElement.style.opacity = 1;
+
         currentIndex[currentCategory]++;
+
         if (currentIndex[currentCategory] >= categorySkills.length) {
             currentIndex[currentCategory] = 0
             moveToNextCategory();
         }
+
     }, 1000);
+
 }
 
 function moveToNextCategory(){
@@ -44,7 +52,8 @@ function moveToNextCategory(){
             currentCategory = 'programming';
             return;
     }
+
     setTimeout(cycleSkills, 3000);
 }
 
-cycleSkills();
+setTimeout(cycleSkills, 3000);
