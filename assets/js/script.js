@@ -33,7 +33,7 @@ function cycleSkills() {
             currentIndex[currentCategory] = 0
             moveToNextCategory();
         } else {
-            setTimeout(cycleSkills, 1000)
+            setTimeout(cycleSkills, 2000)
         }
 
     }, 1000);
@@ -61,7 +61,7 @@ function moveToNextCategory(){
             return;
     }
 
-    setTimeout(cycleSkills, 2000);
+    setTimeout(cycleSkills, 1000);
 }
 
-setTimeout(cycleSkills, 2000);
+setTimeout(cycleSkills, 1000);
