@@ -267,6 +267,7 @@ footer {
     align-items: center;
     width: 300px;
     text-align: center;
+    justify-content: space-between;
 }
 
 .certificate-item h2 {
@@ -278,6 +279,8 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .certificate-content img {
