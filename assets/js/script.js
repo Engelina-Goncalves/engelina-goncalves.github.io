@@ -61,7 +61,7 @@ function moveToNextCategory(){
             return;
     }
 
-    setTimeout(cycleSkills, 1000);
+    setTimeout(cycleSkills, 3000);
 }
 
-setTimeout(cycleSkills, 1000);
+setTimeout(cycleSkills, 3000);
