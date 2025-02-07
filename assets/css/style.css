@@ -221,9 +221,9 @@ footer {
 }
 
 .cv-buttons img {
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
+    width: 210px;
+    height: 297px;
+    object-fit: contain;
     border: 2px solid #333;
     border-radius: 8px;
 }
@@ -268,10 +268,10 @@ footer {
 }
 
 .certificate-item img {
-    width: auto;
-    height: 100%;
+    width: 210px;
+    height: 297px;
     max-height: 180px;
-    object-fit: cover;
+    object-fit: contain;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
