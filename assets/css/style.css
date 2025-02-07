@@ -72,13 +72,16 @@ footer {
 
 .button {
     display: inline-block;
-    background: #495efc;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 15px;
-    transition: 0.3s;
     margin-top: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #005ccc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
 }
 
 .button:hover {
@@ -300,15 +303,3 @@ footer {
     margin-bottom: 10px;
 }
 
-.download-button {
-    display: inline-block;
-    margin-top: auto;
-    padding: 8px 16px;
-    font-size: 14px;
-    border: none;
-    background-color: #005ccc;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-}
