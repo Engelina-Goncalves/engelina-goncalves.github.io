@@ -217,8 +217,8 @@ footer {
 }
 
 .cv-buttons img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     max-height: 180px;
     object-fit: cover;
     border: 1px solid #ccc;
