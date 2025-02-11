@@ -29,9 +29,11 @@ function cycleSkills() {
         currentIndex[currentCategory]++;
 
         if (currentIndex[currentCategory] >= categorySkills.length) {
-            displayAllSkillsInCategory(currentCategory);
-            currentIndex[currentCategory] = 0
-            moveToNextCategory();
+            setTimeout (() => {
+                displayAllSkillsInCategory(currentCategory);
+                currentIndex[currentCategory] = 0
+                moveToNextCategory();
+            }, 2000);
         } else {
             setTimeout(cycleSkills, 2000)
         }
@@ -64,4 +66,4 @@ function moveToNextCategory(){
     setTimeout(cycleSkills, 3000);
 }
 
-setTimeout(cycleSkills, 3000);
+document.addEventListener("DOMContentLoaded", cycleSkills);
