@@ -73,6 +73,10 @@ body{
 .certificate a.certificate-link{display:inline-block}
 .certificate a.button{margin-top:6px}
 
+/* Ensure download anchors and buttons are centered under thumbnails */
+.certificate{display:inline-flex;justify-content:center;align-items:center}
+.certificate .button{margin-top:8px}
+
 /* CV buttons: center thumbnails and download buttons */
 .cv-buttons{display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
 .cv-extra{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
