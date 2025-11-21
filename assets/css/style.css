@@ -79,8 +79,8 @@ body{
 .site-footer a{color:var(--muted);text-decoration:none}
 
 /* simple reveal animation */
-.reveal{opacity:0;transform:translateY(10px);transition:opacity .6s ease, transform .6s ease}
-.reveal.active{opacity:1;transform:none}
+.reveal{opacity:1;transform:none;transition:opacity .3s ease, transform .3s ease}
+.reveal.active{opacity:1}
 
 /* responsiveness */
 @media (max-width:900px){
