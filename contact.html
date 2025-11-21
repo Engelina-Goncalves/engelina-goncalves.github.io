@@ -43,18 +43,21 @@
 
                 <form action="https://formspree.io/f/xjkkdegy" method="POST" class="contact-form" style="margin-top:18px">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="you@domain.com" required>
 
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
 
-                    <button type="submit" class="button">Send</button>
+                    <div style="display:flex;gap:12px;align-items:center;margin-top:6px">
+                        <button type="submit" class="button">Send</button>
+                        <button type="reset" class="button ghost" style="background:transparent;border:1px solid rgba(59,33,64,0.06);">Reset</button>
+                    </div>
                 </form>
 
-                <div style="margin-top:18px" class="muted">Or reach me directly via <a href="mailto:you@example.com">email</a>.</div>
+                <div style="margin-top:18px" class="muted">Or reach me directly via <a href="mailto:you@example.com">email</a>. Social links are in the footer.</div>
             </section>
 
         </main>
