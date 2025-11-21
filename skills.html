@@ -1,125 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills: programming languages, tools, languages and soft skills.">
+    <title>Skills — Engelina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.1">
-        <title>Skills</title>
-        <link rel="stylesheet" href="assets/css/style.css">
+<body>
 
-    </head>
+    <div class="wrapper">
 
-    <body>
-        
-        <div class="wrapper">
-
-            <header>
-
-                <nav>
-
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">Engelina</a>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav-menu" aria-label="Main navigation">
                     <ul>
-
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="aboutme.html">About Me</a>
-                        </li>
-
-                        <li>
-                            <a href="skills.html">Skills</a>
-                        </li>
-
-                        <li>
-                            <a href="certificates.html">Certificates</a>
-                        </li>
-
-                        <li>
-                            <a href="cv.html">CV</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html" class="cta">Contact</a></li>
                     </ul>
-
                 </nav>
+            </div>
+        </header>
 
-            </header>
+        <main>
 
-            <main>
+            <section class="container reveal">
+                <h1>My Skills</h1>
+                <p class="muted">A quick overview — hover or click a card to learn more.</p>
 
-                <section class="skills-container">
+                <div class="skills-grid" style="margin-top:18px">
 
-                    <h1>My Skills</h1>
-
-                    <div class="skills-grid">
-
-                        <div class="skill-card">
-
-                            <span class="skill-icon">💻</span>
-
-                            <h3>Programming</h3>
-                        
-                            <p id="programming-skill" class="skill-description"></p>
-
-                        </div>
-
-                        <div class="skill-card">
-
-                            <span class="skill-icon">🌍</span>
-
-                            <h3>Languages</h3>
-                        
-                            <p id="languages-skill" class="skill-description"></p>
-
-                        </div>
-
-                        <div class="skill-card">
-
-                            <span class="skill-icon">🛠</span>
-
-                            <h3>Tools</h3>
-                        
-                            <p id="tools-skill" class="skill-description"></p>
-
-                        </div>
-
-                        <div class="skill-card">
-
-                            <span class="skill-icon">📜</span>
-
-                            <h3>Soft Skills</h3>
-                        
-                            <p id="softskills-skill" class="skill-description"></p>
-
-                        </div>
-
+                    <div class="skill-card">
+                        <span class="skill-icon">💻</span>
+                        <h3>Programming</h3>
+                        <p id="programming-skill" class="skill-description"></p>
                     </div>
 
-                    <div class="certificates-link">
-
-                        <a href="certificates.html" class="button"> View Certificates</a>
-
+                    <div class="skill-card">
+                        <span class="skill-icon">🌍</span>
+                        <h3>Languages</h3>
+                        <p id="languages-skill" class="skill-description"></p>
                     </div>
 
-                </section>
+                    <div class="skill-card">
+                        <span class="skill-icon">🛠</span>
+                        <h3>Tools</h3>
+                        <p id="tools-skill" class="skill-description"></p>
+                    </div>
 
-            </main>
+                    <div class="skill-card">
+                        <span class="skill-icon">📜</span>
+                        <h3>Soft Skills</h3>
+                        <p id="softskills-skill" class="skill-description"></p>
+                    </div>
 
-            <footer>
+                </div>
 
-                <p>Engelina | All rights reserved</p>
+                <div class="certificates-link" style="margin-top:18px">
+                    <a href="certificates.html" class="button">View Certificates</a>
+                </div>
+            </section>
 
-            </footer>
+        </main>
 
-        </div>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© <span id="year"></span> Engelina Gonçalves — All rights reserved</p>
+                <nav class="social">
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                </nav>
+            </div>
+        </footer>
 
-        <script src="assets/js/script.js" defer></script>
+    </div>
 
-    </body>
+    <script src="assets/js/script.js"></script>
+
+</body>
 
 </html>

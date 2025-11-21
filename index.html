@@ -2,107 +2,107 @@
 
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-        <title> Engelina Gonçalves | Portfolio </title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Engelina Gonçalves — cybersecurity student, web & design enthusiast. Explore projects, skills and contact info.">
+    <title>Engelina Gonçalves | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <body>
+<body>
 
-        <div class="wrapper">
+    <div class="wrapper">
 
-            <header>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">Engelina</a>
 
-                <nav>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
 
+                <nav class="nav-menu" aria-label="Main navigation">
                     <ul>
-
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="aboutme.html">About Me</a>
-                        </li>
-
-                        <li>
-                            <a href="skills.html">Skills</a>
-                        </li>
-
-                        <li>
-                            <a href="certificates.html">Certificates</a>
-                        </li>
-
-                        <li>
-                            <a href="cv.html">CV</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html" class="cta">Contact</a></li>
                     </ul>
-
                 </nav>
+            </div>
+        </header>
 
-            </header>
+        <main>
 
-            <main>
+            <section class="hero container reveal">
+                <div class="hero-inner">
+                    <div class="hero-copy">
+                        <h1>Hi, I'm Engelina <span class="wave">👋</span></h1>
+                        <p class="lead">Cybersecurity student, web & design enthusiast. I craft thoughtful, secure and beautiful web experiences.</p>
+                        <div class="hero-actions">
+                            <a href="aboutme.html" class="button">About Me</a>
+                            <a href="contact.html" class="button ghost">Work with me</a>
+                        </div>
+                    </div>
 
-                <section class="hero">
+                    <div class="hero-media">
+                        <img src="assets/images/profile.jpg" alt="Portrait of Engelina" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </section>
 
-                    <h1>
-                        Hi, I'm Engelina 👋
-                    </h1>
+            <section class="featured container reveal">
+                <h2>Featured</h2>
+                <p class="muted">A few highlights — projects, certificates and skills.</p>
 
-                    <p>
-                        Cybersecurity Student | Literature Enthusiast | Design Enthusiast
-                    </p>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Projects</h3>
+                        <p>Small web projects and experiments showcasing layout, design and accessibility.</p>
+                        <a href="index.html" class="card-link">View</a>
+                    </article>
 
-                </section>
+                    <article class="card">
+                        <h3>Certificates</h3>
+                        <p>Selected certifications and learning achievements.</p>
+                        <a href="certificates.html" class="card-link">View</a>
+                    </article>
 
-                <section class="about-preview">
-            
-                    <h2>
-                        About Me
-                    </h2>
+                    <article class="card">
+                        <h3>Skills</h3>
+                        <p>Programming, tools, languages and soft skills I use every day.</p>
+                        <a href="skills.html" class="card-link">Explore</a>
+                    </article>
+                </div>
+            </section>
 
-                    <p>
-                        I'm a passionate student with a great interest in web developpment, literature, design and music.
-                    </p>
+            <section class="contact-cta container reveal">
+                <h2>Let's build something together</h2>
+                <p class="muted">Open to collaborations, internships and interesting conversations.</p>
+                <a href="contact.html" class="button large">Get in touch</a>
+            </section>
 
-                    <a href="aboutme.html" class="button">Find out more</a> 
+        </main>
 
-                </section>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© <span id="year"></span> Engelina Gonçalves — All rights reserved</p>
+                <nav class="social">
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                </nav>
+            </div>
+        </footer>
 
-                <section class="contact">
+    </div>
 
-                    <h2>
-                        Let's Connect!
-                    </h2>
+    <script src="assets/js/script.js"></script>
+</body>
 
-                    <p>
-                        Feel free to reach out if my portfolio seems interesting to you!
-                    </p>
-
-                    <a href="contact.html" class="button">Contact Me</a>
-
-                </section>
-
-            </main>
-
-            <footer>
-            
-                <p>
-                    Engelina | All rights reserved
-                </p>
-
-            </footer>
-       
-        </div>
-  
-    </body>
-    
 </html>
