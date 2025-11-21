@@ -69,7 +69,7 @@ body{
 .certificate-gallery{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;margin-top:18px}
 .certificate-item{background:transparent;padding:12px;border-radius:14px;display:flex;flex-direction:column;align-items:center;max-width:320px}
 .certificate-content{display:flex;flex-direction:column;align-items:center;gap:10px}
-.certificate-thumb{width:210px;height:auto;max-width:100%;border-radius:12px;object-fit:cover;border:1px solid rgba(59,33,64,0.06);box-shadow:0 12px 30px rgba(59,33,64,0.04)}
+.certificate-thumb{width:160px;height:auto;max-width:100%;border-radius:12px;object-fit:cover;border:1px solid rgba(59,33,64,0.06);box-shadow:0 12px 30px rgba(59,33,64,0.04)}
 .certificate a.certificate-link{display:inline-block}
 .certificate a.button{margin-top:6px}
 
@@ -96,6 +96,7 @@ body{
   .hero-media{width:200px}
   .container{padding:28px 16px}
   .footer-inner{flex-direction:column;align-items:flex-start}
+  .certificate-thumb{width:140px}
 }
 
 @media (max-width:700px){
@@ -103,6 +104,7 @@ body{
   .nav-menu.open{display:block}
   .nav-menu ul{flex-direction:column;gap:12px}
   .nav-toggle{display:block}
+  .certificate-thumb{width:120px}
 }
 
 /* keep some legacy classes usable */
